@@ -1,0 +1,54 @@
+.h1 {
+  color: rgb(158, 25, 25);
+  font-family: sans-serif;
+}
+
+a {
+  color: blueviolet;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+a:visited {
+  color: antiquewhite;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: deepskyblue;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+td {
+  border: 1px solid black;
+}
+
+#navbar {
+  height: 100px;
+  text-align: center;
+}
+
+#content {
+  width: 100%;
+}
+
+#akapit1,
+#akapit2 {
+  width: 45%;
+}
+
+#akapit1 {
+  float: left;
+}
+
+#akapit2 {
+  float: right;
+}
+
+#sidemenu {
+  width: 150px;
+}
