@@ -23,15 +23,13 @@ html {
     overflow-x: hidden;
 }
 
-.background {
-    background-image: url(./C:\Users\pagla\Documents\GitHub\strona.portfolio\img\a1.jpg);
-    width: 400px;
-    height: 400px;
-}
+
+
 
 body {
-    /* background-color: var(--bg-color); */
+    background-color: var(--bg-color);
     color: var(--text-bg-color);
+    
 }
 
 .header {
