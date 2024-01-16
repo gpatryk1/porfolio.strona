@@ -136,9 +136,14 @@ section {
 
 
 .home {
+    margin-left: 100px;
+    margin-top: 10px;
     display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 9%;
+    height: 90vh;
+    padding-top: 0 9%;
 }
 
 .home-content {
@@ -159,10 +164,10 @@ section {
 }
 
 .home-content p {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-top: 2rem 0 4rem;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 
 
@@ -184,7 +189,7 @@ section {
 
 .text-animate span::before{
     content: "#";
-    color: #78aaeca9;
+    color: #caa7da;
     animation: words 14s infinite;
 }
 
@@ -354,7 +359,7 @@ section {
     align-items: center;
     width: 15rem;
     height: 100%;
-    background: rgb(70, 87, 94);
+    background: rgb(123, 133, 138);
     border: .2rem solid rgba(240, 230, 230, 0.075);
     border-radius: .8rem;
     font-size: 1.4rem;
@@ -381,7 +386,7 @@ section {
     color:white;
 }
 
-.btn-box .btn:nth-child(2):: {
+.btn-box .btn:nth-child(2)::before {
     background: rgb(241, 240, 237);
 }
 
@@ -393,7 +398,7 @@ section {
     left: 0;
     width: 0;
     height: 100%;
-    background: #78aaeca9;
+    background: #26313fa9;
     z-index: -1;
     transition: .5s;
 
@@ -401,4 +406,27 @@ section {
 
 .btn-box .btn:hover::before {
     width: 100%;
+}
+
+
+.blob{
+    background-image: url(/images/hjibhk.jpg);
+    width: 500px;
+    height: 600px;
+    background-size: cover;
+    -webkit-background-position: center;
+    background-position: center center;
+    margin: 20px;
+    box-shadow: 0 5px 5px 5px rgba(44, 59, 80, 0.767);
+    animation: animate1 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate1 {
+    0%, 100%{
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
 }
