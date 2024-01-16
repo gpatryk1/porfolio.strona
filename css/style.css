@@ -14,8 +14,8 @@
 
 :root {
     --primary-color: #84c9e4;
-    --bg-color: #081b29;
-    --secound-bg-color: #112e42;
+    --bg-color: #d9dcdd;
+    --secound-bg-color: #c4cace;
     --text-color: #ededed;
     --main-color:#00abf0; 
 }
@@ -31,6 +31,11 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #1D1E23;
     
 
     
@@ -89,87 +94,59 @@ section {
 
 }
 
-.home {
-    display: flex;
-    align-items: center;
-    padding: 0 9%;
-}
-
-.home-content {
-    max-width: 60rem;
-}
-
-.home-content h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    line-height: 1.3;
-
-}
 
 
-
-.home-content h3 {
-    width: 32.8rem;
-    position: relative;
-    font-size: 3rem;
-    font-weight: 700;
-    color: aqua;
-
-}   
-
-.home-content h3::before {
-    content: "";
-    right: 75px;
-    top: 50%;
-    position: absolute;
-    height: 30px;
-    width: 2px;
-    background:#dee7ec;
-    transform: translateY(-55%);
-}
-
-.home-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 4rem;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
-body {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background: #1D1E23;
-}
-h1 {
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 600;
-}
-h1 span {
-    color: #9eeff1;
+.animated-text span{
     position: relative;
 }
-h1 span::before {
+
+.animated-text span::before{
+    content: "#";
+    color: #78aaeca9;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
     content: "";
-    height: 30px;
-    width: 2px;
     position: absolute;
-    top: 50%;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #1D1E23;
+    border-left: 2px solid #e4d7d3;
     right: -8px;
-    background: #89cdfa;
-    transform: translateY(-45%);
-    animation: blink 0.3s infinite ease-in-out;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
-h1 span.stop-blinking::before {
-    animation: none;
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
 }
-@keyframes blink {
-    0%, 100% { opacity: 1 } /* Dodano 0% i 100% */
-    50% { opacity: 0 }
+
+@keyframes words {
+    0%,20%{
+        content: "Software Tester";
+    }
+    21%,40%{
+        content: "Frontend Developer";
+    }
+    41%,60%{
+        content: "Developer";
+    }
+    61%,80%{
+        content: "Designer";
+    }
+    81%,100%{
+        content: "Gamer";
+    }
 }
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+} */
+
