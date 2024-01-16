@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -7,14 +7,15 @@
     text-decoration: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
 
 }
 
 
 :root {
     --primary-color: #84c9e4;
-    --bg-color: #d9dcdd;
+    --bg-color: #151b1d;
     --secound-bg-color: #c4cace;
     --text-color: #ededed;
     --main-color:#00abf0; 
@@ -31,10 +32,10 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+    /* display: flex;
+    height: 100vh; */
+    /* align-items: center;
+    justify-content: center; */
     background: #1D1E23;
     
 
@@ -54,7 +55,7 @@ body {
     z-index: 100;
 }
 
-.navbar a {
+/* .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
     font-weight: 500;
@@ -70,15 +71,54 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color)
-}
+/* } */
 
 
 .logo {
-    font-size: 3.5rem;
-    color: var(--text-color);
+    
+    padding-top: 15px;
+    font-size: 2.5rem;
+    color: white;
     font-weight: 700;
+} 
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    padding: 30px 40px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
+.navbar a {
+    position: relative;
+    font-size: 2.3rem;
+    
+    color: hsla(0, 23%, 94%, 0.911);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 3.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: hsla(0, 14%, 99%, 0.616);
+    transition: .7s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
 
 
 
@@ -95,18 +135,60 @@ section {
 }
 
 
-
-.animated-text span{
-    position: relative;
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
 }
 
-.animated-text span::before{
+.home-content {
+    max-width: 60rem;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+
+.home-content .text-animate {
+    font-size: 3.2rem;
+    font-weight: 700;
+    
+}
+
+.home-content p {
+    font-size: 1.7rem;
+    margin-top: 2rem 0 4rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+.text-animate {
+    font-size: 36px;
+    font-weight: 600;
+    min-width: 280px;
+    margin-top: 0px;
+} 
+ .text-animate {
+    padding-top: 0; } 
+
+    
+
+ .text-animate span{
+    position: relative;
+    
+}
+
+.text-animate span::before{
     content: "#";
     color: #78aaeca9;
-    animation: words 20s infinite;
+    animation: words 14s infinite;
 }
 
-.animated-text span::after{
+.text-animate span::after{
     content: "";
     position: absolute;
     width: calc(100% + 8px);
@@ -114,7 +196,7 @@ section {
     background-color: #1D1E23;
     border-left: 2px solid #e4d7d3;
     right: -8px;
-    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+    animation: cursor .8s infinite, typing 23s steps(30) infinite;
 }
 
 @keyframes cursor {
@@ -124,22 +206,17 @@ section {
 }
 
 @keyframes words {
-    0%,20%{
+    0%, 33.33% {
         content: "Software Tester";
     }
-    21%,40%{
+    33.34%, 66.66% {
         content: "Frontend Developer";
     }
-    41%,60%{
-        content: "Developer";
-    }
-    61%,80%{
-        content: "Designer";
-    }
-    81%,100%{
+    66.67%, 100% {
         content: "Gamer";
     }
 }
+
 
 @keyframes typing {
     10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
@@ -148,5 +225,180 @@ section {
     5%,20%,25%,40%,45%,60%,65%,80%,85%{
         width: calc(100% + 8px);
     }
-} */
+}  
 
+.icon-box {
+    position: absolute;
+    bottom: 6rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+
+}
+
+.icon-box a {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    
+    
+}
+
+.icon-box a {
+    color: #fbf9fc;
+}
+
+.icon-box a:hover {
+    color: #fcf8f560;
+}
+
+/* .text-animate span::before {
+    content: "#";
+    color: #78aaeca9;
+    animation: words 23s infinite;
+}
+
+.text-animate span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #1D1E23;
+    border-left: 2px solid #e4d7d3;
+    right: -8px;
+    animation: cursor .8s infinite, typing 18s steps(30) infinite;
+}
+
+@keyframes words {
+    0%, 33.33% {
+        content: "Software Tester";
+    }
+    33.34%, 66.66% {
+        content: "Frontend Developer";
+    }
+    66.67%, 100% {
+        content: "Gamer";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    } */
+
+    
+
+
+
+
+    .text-deco {
+        position: static;
+        font-size: 30px;
+        width: 100%;
+        color: #e58c8a;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+        line-height: 0.70em;
+        outline: none;
+        animation: animate 6s linear infinite; /* Increased the duration to slow down the animation */
+    }
+    
+    .text-deco::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 100%;
+    }
+    
+    .text-deco p {
+        -webkit-box-reflect: none;
+    }
+    
+    @keyframes animate {
+        0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+            color: #faf8f8;
+            text-shadow: none;
+        }
+        18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+            color: #f0e6e6;
+            text-shadow: 0 0 10px #f1ecec,
+                          0 0 20px #f3eaea,
+                          0 0 40px #f5f0f0,
+                          0 0 80px #f5f0f0,
+                          0 0 160px #f8f8f8;
+        }
+    }
+
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 4rem;
+    /* padding-top: 25px; */
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: rgb(70, 87, 94);
+    border: .2rem solid rgba(240, 230, 230, 0.075);
+    border-radius: .8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    color: whitesmoke;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    
+
+}
+
+.btn-box .btn:hover {
+    color: rgb(253, 255, 255);
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: rgb(124, 181, 228);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color:white;
+}
+
+.btn-box .btn:nth-child(2):: {
+    background: rgb(241, 240, 237);
+}
+
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #78aaeca9;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
