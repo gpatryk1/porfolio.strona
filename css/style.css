@@ -58,23 +58,7 @@ body {
     z-index: 100;
 }
 
-/* .navbar a {
-    font-size: 1.7rem;
-    color: var(--text-color);
-    font-weight: 500;
-    margin-left: 3.5rem;
-    transition: .3s;
-   
-}
 
-.navbar a:hover {
-    color: var(--main-color);
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: var(--main-color)
-/* } */
 
 
 .logo {
@@ -273,42 +257,6 @@ section {
     color: #fffefdcb;
 }
 
-/* .text-animate span::before {
-    content: "#";
-    color: #78aaeca9;
-    animation: words 23s infinite;
-}
-
-.text-animate span::after {
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    background-color: #1D1E23;
-    border-left: 2px solid #e4d7d3;
-    right: -8px;
-    animation: cursor .8s infinite, typing 18s steps(30) infinite;
-}
-
-@keyframes words {
-    0%, 33.33% {
-        content: "Software Tester";
-    }
-    33.34%, 66.66% {
-        content: "Frontend Developer";
-    }
-    66.67%, 100% {
-        content: "Gamer";
-    }
-}
-
-@keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
-        width: 0;
-    }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
-        width: calc(100% + 8px);
-    } */
 
     
 
@@ -430,7 +378,7 @@ section {
     background-position: center center;
     margin: 10px;
     box-shadow: 0 10px 10px 10px #b7ab9f96;
-    animation: animate1 5s ease-in-out infinite;
+    animation: animate1 4s ease-in-out infinite;
     transition: all 1s ease-in-out;
 }
 
