@@ -115,12 +115,19 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: hsla(0, 14%, 99%, 0.616);
+    background-color: #cab49fb0;
     transition: .7s;
 }
 
 .navbar a:hover::before {
     width: 100%;
+}
+
+.navbar a:hover {
+    color:  #bba693a8; /* Nowy kolor tekstu po najechaniu */
+    transition: 0.4s;
+    
+    
 }
 
 
@@ -133,7 +140,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 13% 2rem;
+    padding: 10rem 12% 2rem;
 
 }
 
@@ -171,6 +178,7 @@ section {
     margin-top: 3rem 0 6rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    text-shadow: 0 0 10px #f0e7e78a, 0 0 20px #fdfdfd80, 0 0 30px #e0c6c6;
 }
 
 
@@ -237,11 +245,11 @@ section {
 
 .icon-box {
     position: absolute;
-    bottom: 6rem;
-    width: 170px;
+    bottom: 4rem;
+    width: 210px;
     display: flex;
     justify-content: space-between;
-    font-size: 35px;
+    font-size:35px;
 
 }
 
@@ -351,7 +359,7 @@ section {
     display: flex;
     justify-content: space-between;
     width: 34.5rem;
-    height: 4rem;
+    height: 5rem;
     /* padding-top: 25px; */
 }
 
@@ -360,12 +368,12 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 17rem;
     height: 100%;
     background: rgb(123, 133, 138);
-    border: .2rem solid rgba(240, 230, 230, 0.075);
+    border: .2rem solid rgba(230, 226, 226, 0.075);
     border-radius: .8rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: bold;
     letter-spacing: .1rem;
     color: whitesmoke;
@@ -415,13 +423,13 @@ section {
 .blob{
     
     background-image: url(/images/hjibhk.jpg);
-    width: 500px;
-    height: 600px;
+    width: 600px;
+    height: 750px;
     background-size: cover;
     -webkit-background-position: center;
     background-position: center center;
     margin: 10px;
-    box-shadow: 0 5px 5px 5px #b7ab9f96;
+    box-shadow: 0 10px 10px 10px #b7ab9f96;
     animation: animate1 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
 }
