@@ -116,7 +116,7 @@ body {
     width: 0;
     height: 2px;
     background-color: #cab49fb0;
-    transition: .7s;
+    transition: .6s;
 }
 
 .navbar a:hover::before {
@@ -212,7 +212,7 @@ section {
     background-color: #1D1E23;
     border-left: 2px solid #e4d7d3;
     right: -8px;
-    animation: cursor .8s infinite, typing 25s steps(30) infinite;
+    animation: cursor .8s infinite, typing 25s steps(35) infinite;
 }
 
 @keyframes cursor {
@@ -323,7 +323,7 @@ section {
         -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
         line-height: 0.70em;
         outline: none;
-        animation: animate 6s linear infinite; /* Increased the duration to slow down the animation */
+        animation: animate 4s linear infinite; /* Increased the duration to slow down the animation */
     }
     
     .text-deco::before {
@@ -370,7 +370,7 @@ section {
     align-items: center;
     width: 17rem;
     height: 100%;
-    background: rgb(123, 133, 138);
+    background:#655c53;
     border: .2rem solid rgba(230, 226, 226, 0.075);
     border-radius: .8rem;
     font-size: 1.6rem;
