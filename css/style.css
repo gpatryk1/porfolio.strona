@@ -36,11 +36,13 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     
-    background: #1D1E23;
+    background: #1d1e23;
     
 
     
 }
+
+
 
 .header {
     position: fixed;
