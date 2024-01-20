@@ -429,7 +429,7 @@ color: rgb(255, 255, 255);
 
 .blob{
     
-    background-image: url(/images/img/hjibhkkk.png);
+    background: url(/hjibhkkk.png);
     width: 500px;
     height: 650px;
     background-size: cover;
