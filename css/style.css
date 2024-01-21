@@ -575,7 +575,7 @@ span {
 
 .about-content p {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 2rem 0 3rem;
 }
 
@@ -599,6 +599,7 @@ span {
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     width: 100%;
+    
     padding: 50px 30px;
     margin-top: 65px;
     /* background-color: rgba(255,255,255,0.06);
@@ -621,7 +622,7 @@ span {
     z-index: -1;
     border-radius: 20px;
 }
-.shape-1{
+/* .shape-1{
     height: 150px;
     width: 150px;
     background: linear-gradient(
@@ -646,7 +647,7 @@ span {
     top: -100px;
     right: -50px;
     z-index: -1;
-}
+} */
 .container1 *{
     font-family: "Poppins",sans-serif;
     color: #ffffff;
