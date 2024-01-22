@@ -50,8 +50,25 @@ const sr = ScrollReveal({
     reset: true     
 })
 
-  sr.reveal('.home-content',{})
-  sr.reveal('.topline',{delay: 400})
+  sr.reveal('.home-content',{
+    delay: 200,
+    origin: 'top',
+    distance: '50px',
+    interval: 200
+  })
+  sr.reveal('.bx bx-menu',{
+    delay: 200,
+    origin: 'top',
+    distance: '50px',
+    interval: 200
+  })
+
+
+
+  sr.reveal('.topline',{delay: 400,
+    origin: 'left',   
+    distance: '700px',})
+
   sr.reveal('.logo',{delay: 500,
     origin: 'left',   
     distance: '50px',})
@@ -59,9 +76,9 @@ const sr = ScrollReveal({
     origin: 'left',   
     distance: '100px',})
   sr.reveal('',{delay: 200})
-  sr.reveal('.img-photo',{delay: 500,
+  sr.reveal('.img-photo',{delay: 400,
     origin: 'right',   
-    distance: '50px',})
+    distance: '700px',})
 
     // sr.reveal('.about',{delay: 300,
     //     origin: 'left',   
@@ -75,7 +92,7 @@ const sr = ScrollReveal({
             
         sr.reveal('.about-img',{delay: 300,
             origin: 'right',   
-            distance: '100px',
+            distance: '400px',
             })
         sr.reveal('.about-content',{delay: 300,
             origin: 'left',   
