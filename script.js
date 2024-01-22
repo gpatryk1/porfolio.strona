@@ -62,6 +62,13 @@ const sr = ScrollReveal({
     distance: '200px',
     interval: 200
   })
+  sr.reveal('.backlit-box',{
+    delay: 200,
+    origin: 'right',
+    distance: '300px',
+    interval: 200
+  })
+  
 
 
 

@@ -175,7 +175,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 9rem 11% 2rem;
+    padding: 6rem 13% 2rem;
 
 }
 
@@ -429,6 +429,7 @@ audio {
     width: 34.5rem;
     height: 6rem;
     padding-top: 10px;
+    margin-top: -15px;
     
 }
 
@@ -490,7 +491,7 @@ audio {
 
 
 
-.blob{
+/* .blob{
     
     background: url(/images/hjibhkkk.png);
     width: 450px;
@@ -503,9 +504,9 @@ audio {
     animation: animate1 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
     border-radius: 30%; 
-}
+} */
 
-@keyframes animate1 {
+/* @keyframes animate1 {
     0%{
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
@@ -515,8 +516,73 @@ audio {
    100%{
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
+} */
+.imgi {
+    position: relative;
+    border-radius: 35%;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.80;   /* Zmniejszenie przezroczystości do 75% */
+    overflow: hidden; /* Ukrywa krawędzie obrazu */
+     /* Dodaje cień o kolorze tła obrazu (możesz dostosować kolor) */
 }
 
+.backlit-box {
+    position: relative;
+    /* width: 50vw;
+    height: 60vw; */
+    line-height: 30vw;
+    text-align: center;
+    color: #22252a;
+    border-radius: 50%;
+    width: 500px;
+    height: 650px;
+    background-size: cover;
+    background-position: center center;
+    margin: 5px;
+    /* background: rgba(255, 255, 255, 0.1); Adjust the transparency */
+  }
+  
+  .backlit-box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.85);
+    filter: blur(6vw); /* Adjust the blur amount */
+    background: linear-gradient(270deg, #d0e531da, #f38b15, #6c0984); /* Adjust gradient colors */
+    background-size: 300% 300%;
+    animation: animateGlow 5s ease infinite;
+  }
+  
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* @keyframes textColor {
+    0% {
+      color: #7e0fff;
+    }
+    50% {
+      color: #0fffc1;
+    }
+    100% {
+      color: #7e0fff;
+    }
+  } */
 
 .about {
     display: flex;
@@ -601,16 +667,51 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.80;
 }
 
 .about-img img {
     width: 90%;
     border-radius: 50%;
-    border: .3rem solid #fab066c5;
+    opacity: 0.80;
+    /* border: .3rem solid #fab066c5; */
 
 }
 
-.about-img .circle-spin {
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.90);
+    filter: blur(3vw); /* Adjust the blur amount */
+    background: linear-gradient(270deg, #d0e531da, #f38b15, #6c0984); /* Adjust gradient colors */
+    background-size: 300% 300%;
+    animation: animateGlow 5s ease infinite;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    /* border: .3rem solid #fab066c5; */
+}
+
+/* .about-img .circle-spin {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -623,7 +724,7 @@ span {
     border-left: .2rem solid #474b4c0a;
     border-right: .2rem solid #474b4c0a;
     animation: aboutSpinner 8s linear infinite;
-}
+} */
 
 .about-content {
     text-align: center;
