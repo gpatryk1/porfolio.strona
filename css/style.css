@@ -533,6 +533,15 @@ audio {
     margin-bottom: 3rem;
     text-align: center;
 }
+
+.heading6 {
+    position: relative;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
  .heading1 {
     position: relative;
     font-size: 5rem;
@@ -632,6 +641,8 @@ span {
         
         
 }
+
+.btn-submit {}
 
 
 
@@ -856,7 +867,7 @@ h2{
     font-size:  1.5rem;
 }
 
-.animate {
+/* .animate {
     position: absolute;
     top: 0;
     right: 0;
@@ -895,7 +906,7 @@ section:nth-child(odd) .animate.scroll {
 .heading5.show-animate .animate.scroll {
     transition-delay: calc(.3s * var(--i));
     width: 0; /* Set the initial width */
-}
+
 
 /* BREAKPOINTS */
 
