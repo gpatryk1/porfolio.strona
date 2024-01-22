@@ -166,7 +166,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 11rem 13% 2rem;
+    padding: 9rem 11% 2rem;
 
 }
 
@@ -546,7 +546,7 @@ audio {
     margin: 0 auto;
     transform: scale(0.85);
     filter: blur(6vw); /* Adjust the blur amount */
-    background: linear-gradient(270deg, #d0e531da, #f38b15, #6c0984); /* Adjust gradient colors */
+    background: linear-gradient(270deg, #a8b7d6da, #f38b15, #6c0984, #ac24dd); /* Adjust gradient colors */
     background-size: 300% 300%;
     animation: animateGlow 5s ease infinite;
   }
@@ -689,9 +689,9 @@ span {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    transform: scale(0.90);
+    transform: scale(1.5);
     filter: blur(3vw); /* Adjust the blur amount */
-    background: linear-gradient(270deg, #d0e531da, #f38b15, #6c0984); /* Adjust gradient colors */
+    background: linear-gradient(270deg, #a8b7d6da, #f38b15, #6c0984, #ac24dd); /* Adjust gradient colors */
     background-size: 300% 300%;
     animation: animateGlow 5s ease infinite;
 }
@@ -766,10 +766,10 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background:url(/images/Leonardo_Diffusion_XL_Cyber_network_connection_structure_techn_0.jpg);
+    /* background:url(/images/); */
     background-size: cover;
     background-position: center;
-    opacity: 0.3; /* Dostosuj intensywność kolorów według własnych preferencji */
+    opacity: 20; /* Dostosuj intensywność kolorów według własnych preferencji */
     z-index: -1;
     border-radius: 20px;
 }
