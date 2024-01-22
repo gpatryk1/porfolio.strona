@@ -43,3 +43,7 @@ window.onscroll = () => {
 
 }
 
+
+
+  // Ustaw domyślną głośność na 50% (możesz dostosować według potrzeb)
+  document.getElementById("audio").volume = 0.5;
