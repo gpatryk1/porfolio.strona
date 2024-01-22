@@ -53,13 +53,13 @@ const sr = ScrollReveal({
   sr.reveal('.home-content',{
     delay: 200,
     origin: 'top',
-    distance: '50px',
+    distance: '150px',
     interval: 200
   })
   sr.reveal('.bx bx-menu',{
     delay: 200,
     origin: 'top',
-    distance: '50px',
+    distance: '200px',
     interval: 200
   })
 
@@ -67,15 +67,15 @@ const sr = ScrollReveal({
 
   sr.reveal('.topline',{delay: 400,
     origin: 'left',   
-    distance: '700px',})
+    distance: '300px',})
 
-  sr.reveal('.logo',{delay: 500,
-    origin: 'left',   
-    distance: '50px',})
+//   sr.reveal('.logo',{delay: 500,
+//     origin: 'left',   
+//     distance: '50px',})
   sr.reveal('.icon-box',{delay: 500,
     origin: 'left',   
-    distance: '100px',})
-  sr.reveal('',{delay: 200})
+    distance: '300px',})
+  
   sr.reveal('.img-photo',{delay: 400,
     origin: 'right',   
     distance: '700px',})
@@ -87,7 +87,7 @@ const sr = ScrollReveal({
 
         sr.reveal('.heading',{delay: 300,
             origin: 'left',   
-            distance: '50px',
+            distance: '300px',
             interval: 200})
             
         sr.reveal('.about-img',{delay: 300,
@@ -96,15 +96,16 @@ const sr = ScrollReveal({
             })
         sr.reveal('.about-content',{delay: 300,
             origin: 'left',   
-            
             distance: '300px'})
-        sr.reveal('.heading5',{delay: 300,
+        
+            sr.reveal('.heading5',{delay: 300,
             origin: 'left',   
-            
-            distance: '200px'})
-        sr.reveal('.container1',{delay: 300,
+            distance: '400px'})
+        
+        
+            sr.reveal('.container1',{delay: 300,
             origin: 'right',   
-            distance: '200px'})
+            distance: '700px'})
         sr.reveal('.heading1',{delay: 300,
                
             distance: '300px'})

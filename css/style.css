@@ -175,7 +175,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding:9rem 11% 2rem;
+    padding: 9rem 11% 2rem;
 
 }
 
@@ -499,13 +499,13 @@ audio {
     -webkit-background-position: cover;
     background-position: center center;
     margin: 5px;
-    box-shadow: 0 5px 5px 5px #79706796;
+    box-shadow: 0px 5px 5px 5px #3f3c3996;
     animation: animate1 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
     border-radius: 30%; 
 }
 
-/* @keyframes animate1 {
+@keyframes animate1 {
     0%{
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
@@ -515,7 +515,7 @@ audio {
    100%{
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
-} */
+}
 
 
 .about {
