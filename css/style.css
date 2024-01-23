@@ -121,6 +121,8 @@ body {
     text-decoration: none;
     margin-left: 4rem;
     letter-spacing: 0.5px;
+    transition: color 0.9s ease;
+    
     
     /* justify-content: space-between; */
     
@@ -139,14 +141,15 @@ body {
     width: 0;
     height: 2px;
     background-color: #cab49fb0;
-    transition: .3s;
+    transition: .5s;
 } */
+
+
 
 .navbar a:hover,
 .navbar a.active {
-    color: #fdb063; /* Neon pink color, you can adjust this to your preference */
-    text-shadow: 0 0 10px #fdb063, 0 0 20px #fdb063, 0 0 30px #fdb063; /* Adding a glowing effect */
-    
+    color: #fdb063a1;
+    text-shadow: 0 0 10px #fdb063a1, 0 0 20px #fdb063a1, 0 0 30px #fdb063a1;
 }
 
 
@@ -687,11 +690,12 @@ span {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    transform: scale(2);
+    transform: scale(1.5);
     filter: blur(3vw); /* Adjust the blur amount */
     background: linear-gradient(270deg, #9036c7da, #f19e3e, #827e82ef); /* Adjust gradient colors */
     background-size: 200% 200%;
     animation: animateGlow 5s ease infinite;
+    border-radius: 45%;
 }
 
 .about-img img {
@@ -769,7 +773,7 @@ span {
     margin: 0 auto;
     transform: scale(1);
     filter: blur(4vw); /* Adjust the blur amount */
-    background: linear-gradient(300deg, #3c3240da, #9f856693); /* Adjust gradient colors */
+    background: linear-gradient(300deg, #3c324090, #9f85667d); /* Adjust gradient colors */
     background-size: 300% 300%;
     animation: animateGlow 5s ease-out;
 }
