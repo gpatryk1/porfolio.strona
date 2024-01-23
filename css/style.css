@@ -58,7 +58,7 @@ body {
     align-items: center;
     z-index: 100;
     background:rgba(0, 0, 0, .1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     transition: .3s;
 }
 
@@ -520,7 +520,7 @@ audio {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    transform: scale(1.3);
+    transform: scale(1.4);
     filter: blur(7vw); 
     background: linear-gradient(270deg, #8f158fda, #f19e3e, #591a91ef); 
     background-size:300% 300%;
@@ -923,7 +923,7 @@ h2{
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: rgba(0, 0, 0, .1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
 
 }
 
