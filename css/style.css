@@ -544,9 +544,9 @@ audio {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    transform: scale(1);
+    transform: scale(1.3);
     filter: blur(7vw); 
-    background: linear-gradient(270deg, #a8b7d6da, #f19e3e, #827e7eef); 
+    background: linear-gradient(270deg, #8f158fda, #f19e3e, #591a91ef); 
     background-size:300% 300%;
     animation: animateGlow 8s ease infinite;
   }
@@ -666,7 +666,7 @@ span {
     width: 90%;
     border-radius: 50%;
     opacity: 0.80;
-    border: 3px solid #f88c4e;
+    /* border: 3px solid #f88c4e; */
     /* border: .3rem solid #fab066c5; */
 
 }
@@ -691,9 +691,9 @@ span {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    transform: scale(1.5);
+    transform: scale(1);
     filter: blur(3vw); /* Adjust the blur amount */
-    background: linear-gradient(270deg, #a8b7d6da, #f19e3e, #827e7eef); /* Adjust gradient colors */
+    background: linear-gradient(270deg, #9036c7da, #f19e3e, #e024caef); /* Adjust gradient colors */
     background-size: 300% 300%;
     animation: animateGlow 5s ease infinite;
 }
