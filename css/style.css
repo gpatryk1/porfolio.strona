@@ -512,7 +512,7 @@ audio {
 .imgi {
     position: relative;
     border-radius: 10%;
-    max-width: 109%;
+    max-width: 107.5%;
     height: auto;
     opacity: 0.65;   
     overflow: hidden;
