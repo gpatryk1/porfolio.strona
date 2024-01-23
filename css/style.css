@@ -487,11 +487,12 @@ audio {
 .imgi {
     position: relative;
 
-    max-width: 107.5%;
+    max-width: 103%;
     height: auto;
     opacity: 0.75;   
     overflow: hidden;
     box-shadow: rgba(245, 4, 4, 10);
+    border-radius: 45%;
      
 }
 
