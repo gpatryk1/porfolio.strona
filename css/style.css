@@ -773,9 +773,9 @@ span {
     margin: 0 auto;
     transform: scale(1);
     filter: blur(4vw); /* Adjust the blur amount */
-    background: linear-gradient(150deg, #3c3240da, #9f8566); /* Adjust gradient colors */
+    background: linear-gradient(300deg, #3c3240da, #9f856693); /* Adjust gradient colors */
     background-size: 300% 300%;
-    animation: animateGlow 5s ease-in;
+    animation: animateGlow 5s ease-out;
 }
 
 .container1 *{
