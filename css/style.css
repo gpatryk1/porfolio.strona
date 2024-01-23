@@ -486,7 +486,7 @@ audio {
 
 .imgi {
     position: relative;
-    /* border-radius: 10%; */
+
     max-width: 107.5%;
     height: auto;
     opacity: 0.75;   
@@ -657,8 +657,8 @@ span {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    transform: scale(1.5);
-    filter: blur(3vw); /* Adjust the blur amount */
+    transform: scale(2);
+    filter: blur(1.5vw); /* Adjust the blur amount */
     background: linear-gradient(270deg, #9036c7da, #f19e3e, #827e82ef); /* Adjust gradient colors */
     background-size: 200% 200%;
     animation: animateGlow 5s ease infinite;
