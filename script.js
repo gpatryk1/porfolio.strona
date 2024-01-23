@@ -54,13 +54,13 @@ const sr = ScrollReveal({
   sr.reveal('.home-content', {
     delay: 400,
     origin: 'top',
-    distance: '700px'
+    distance: '900px'
   });
-  sr.reveal('.header', {
-    delay: 400,
-    origin: 'top',
-    distance: '700px'
-  });
+//   sr.reveal('.header', {
+//     delay: 400,
+//     origin: 'top',
+//     distance: '700px'
+//   });
   
   
 //   sr.reveal('.bx-menu', { 
@@ -76,21 +76,21 @@ const sr = ScrollReveal({
   });
   
   sr.reveal('.topline', {
-    delay: 600,
+    delay: 700,
     origin: 'left',
     distance: '700px'
   });
   
   sr.reveal('.icon-box', {
-    delay: 500,
+    delay: 600,
     origin: 'left',
-    distance: '600px'
+    distance: '1200px'
   });
   
   sr.reveal('.img-photo', {
-    delay: 400,
+    delay: 800,
     origin: 'right',
-    distance: '700px'
+    distance: '800px'
   });
   
   sr.reveal('.heading', {
@@ -112,13 +112,13 @@ const sr = ScrollReveal({
   });
   
   sr.reveal('.heading5', {
-    delay: 400,
+    delay: 600,
     origin: 'left',
     distance: '700px'
   });
   
   sr.reveal('.container1', {
-    delay: 500,
+    delay: 700,
     origin: 'right',
     distance: '700px'
   });

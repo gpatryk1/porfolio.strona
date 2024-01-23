@@ -773,7 +773,7 @@ span {
     margin: 0 auto;
     transform: scale(1);
     filter: blur(4vw); /* Adjust the blur amount */
-    background: linear-gradient(300deg, #3c3240da, #7460487e); /* Adjust gradient colors */
+    background: linear-gradient(300deg, #3c3240da, #4a3f327e); /* Adjust gradient colors */
     background-size: 300% 300%;
     animation: animateGlow 5s ease-out;
 }
