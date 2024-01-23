@@ -63,11 +63,11 @@ const sr = ScrollReveal({
   });
   
   
-  sr.reveal('.bx-menu', { // Corrected selector
-    delay: 200,
-    origin: 'right',
-    distance: '500px'
-  });
+//   sr.reveal('.bx-menu', { 
+//     delay: 200,
+//     origin: 'right',
+//     distance: '500px'
+//   });
   
   sr.reveal('.backlit-box', {
     delay: 600,
