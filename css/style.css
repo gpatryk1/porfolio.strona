@@ -527,6 +527,16 @@ audio {
     background-size:300% 300%;
     animation: animateGlow 8s ease infinite;
   }
+
+  .imgi {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.imgi:hover {
+    opacity: 1;
+}
+
+ 
   
   @keyframes animateGlow {
     0% {
