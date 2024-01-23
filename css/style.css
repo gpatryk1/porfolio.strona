@@ -483,35 +483,10 @@ audio {
 
 
 
-/* .blob{
-    
-    background: url(/images/hjibhkkk.png);
-    width: 450px;
-    height: 600px;
-    background-size: cover;
-    -webkit-background-position: cover;
-    background-position: center center;
-    margin: 5px;
-    box-shadow: 0px 5px 5px 5px #3f3c3996;
-    animation: animate1 5s ease-in-out infinite;
-    transition: all 1s ease-in-out;
-    border-radius: 30%; 
-} */
 
-/* @keyframes animate1 {
-    0%{
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-    50%{
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-   100%{
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-} */
 .imgi {
     position: relative;
-    border-radius: 10%;
+    /* border-radius: 10%; */
     max-width: 107.5%;
     height: auto;
     opacity: 0.75;   
@@ -564,17 +539,7 @@ audio {
     }
   }
   
-  /* @keyframes textColor {
-    0% {
-      color: #7e0fff;
-    }
-    50% {
-      color: #0fffc1;
-    }
-    100% {
-      color: #7e0fff;
-    }
-  } */
+  
 
 .about {
     display: flex;
