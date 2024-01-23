@@ -94,31 +94,31 @@ const sr = ScrollReveal({
   });
   
   sr.reveal('.heading', {
-    delay: 500,
+    delay: 400,
     origin: 'left',
     distance: '900px'
   });
   
   sr.reveal('.about-img', {
-    delay: 500,
+    delay: 400,
     origin: 'right',
     distance: '900px'
   });
   
   sr.reveal('.about-content', {
-    delay: 400,
+    delay: 300,
     origin: 'left',
     distance: '800px'
   });
   
   sr.reveal('.heading5', {
-    delay: 500,
+    delay: 300,
     origin: 'left',
     distance: '700px'
   });
   
   sr.reveal('.container1', {
-    delay: 600,
+    delay: 400,
     origin: 'right',
     distance: '700px'
   });
@@ -135,26 +135,26 @@ const sr = ScrollReveal({
   });
   
   sr.reveal('.input-box', {
-    delay: 600,
+    delay: 400,
     origin: 'left',
     distance: '700px'
   });
   
   sr.reveal('.textarea-field', {
-    delay: 500,
+    delay: 300,
     origin: 'right',
     distance: '900px'
   });
   
   // Redundant calls
   sr.reveal('.icon-box', {
-    delay: 500,
+    delay: 400,
     origin: 'left',
     distance: '200px'
   });
   
   sr.reveal('.btn', {
-    delay: 500,
+    delay: 300,
     origin: 'bottom',
     distance: '200px'
   });
