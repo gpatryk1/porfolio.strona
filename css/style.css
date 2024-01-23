@@ -106,7 +106,7 @@ body {
     font-weight: 700;
     
 } 
-avbar
+
 .navbar {
     position: relative;
 }
@@ -116,7 +116,7 @@ avbar
 .navbar a {
     
     font-size: 2.4rem;
-    color: hsla(0, 15%, 94%, 0.911);
+    color: hsla(0, 16%, 94%, 0.783);
     font-weight: 600;
     text-decoration: none;
     margin-left: 4rem;
@@ -126,10 +126,10 @@ avbar
     
 }
 
-.navbar a:hover,
+/* .navbar a:hover,
 .navbar a.active {
     color:#f7c290a5
-}
+} */
 
 /* .navbar a::before {
     content: '';
@@ -142,14 +142,10 @@ avbar
     transition: .3s;
 } */
 
-.navbar a:hover::before {
-    width: 100%;
-}
-
-.navbar a:hover {
-    color:  #efbd8f8e; 
-    transition: 0.4s;
-    
+.navbar a:hover,
+.navbar a.active {
+    color: #fdb063; /* Neon pink color, you can adjust this to your preference */
+    text-shadow: 0 0 10px #fdb063, 0 0 20px #fdb063, 0 0 30px #fdb063; /* Adding a glowing effect */
     
 }
 
@@ -773,7 +769,7 @@ span {
     margin: 0 auto;
     transform: scale(1);
     filter: blur(4vw); /* Adjust the blur amount */
-    background: linear-gradient(300deg, #3c3240da, #4a3f327e); /* Adjust gradient colors */
+    background: linear-gradient(300deg, #3c3240da, #9f856693); /* Adjust gradient colors */
     background-size: 300% 300%;
     animation: animateGlow 5s ease-out;
 }
