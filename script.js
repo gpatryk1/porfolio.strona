@@ -94,7 +94,7 @@ const sr = ScrollReveal({
   });
   
   sr.reveal('.heading', {
-    delay: 600,
+    delay: 500,
     origin: 'left',
     distance: '900px'
   });
@@ -112,13 +112,13 @@ const sr = ScrollReveal({
   });
   
   sr.reveal('.heading5', {
-    delay: 600,
+    delay: 500,
     origin: 'left',
     distance: '700px'
   });
   
   sr.reveal('.container1', {
-    delay: 700,
+    delay: 600,
     origin: 'right',
     distance: '700px'
   });
