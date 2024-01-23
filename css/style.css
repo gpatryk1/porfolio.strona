@@ -693,7 +693,7 @@ span {
     margin: 0 auto;
     transform: scale(1);
     filter: blur(3vw); /* Adjust the blur amount */
-    background: linear-gradient(270deg, #9036c7da, #f19e3e, #e024caef); /* Adjust gradient colors */
+    background: linear-gradient(270deg, #9036c7da, #f19e3e, #827e82ef); /* Adjust gradient colors */
     background-size: 300% 300%;
     animation: animateGlow 5s ease infinite;
 }
@@ -749,7 +749,7 @@ span {
     -webkit-backdrop-filter: blur(4px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 25px 0 rgba(248, 173, 97, 0.491);
+    /* box-shadow: 0 8px 25px 0 rgba(248, 173, 97, 0.491); */
     width: 100%;
     
     padding: 20px 16px;
@@ -758,22 +758,24 @@ span {
     
     
     
-    /* backdrop-filter: blur(5px); 
+ 
 }
 
-.container1::before {
+.container1::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    /* background:url(/images/); */
-    background-size: cover;
-    background-position: center;
-    opacity: 20; /* Dostosuj intensywność kolorów według własnych preferencji */
+    right: 0;
     z-index: -1;
-    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(1);
+    filter: blur(4vw); /* Adjust the blur amount */
+    background: linear-gradient(150deg, #3c3240da, #9f8566); /* Adjust gradient colors */
+    background-size: 300% 300%;
+    animation: animateGlow 5s ease-in;
 }
 
 .container1 *{
