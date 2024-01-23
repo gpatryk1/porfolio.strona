@@ -100,12 +100,13 @@ body {
 
 .logo {
     position: relative;
-    /* padding-top: 3px; */
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.851);
+    color:  #fdb063a1; /* Neon pink color, you can adjust this to your preference */
     font-weight: 700;
-    
-} 
+    text-shadow: 0 0 15px  #fdb063a1, 0 0 25px  #fdb063a1, 0 0 35px  #fdb063a1; /* Adding a constant glowing effect */
+}
+
+
 
 .navbar {
     position: relative;
@@ -772,7 +773,7 @@ span {
     width: 100%;
     margin: 0 auto;
     transform: scale(1);
-    filter: blur(4vw); /* Adjust the blur amount */
+    filter: blur(7vw); /* Adjust the blur amount */
     background: linear-gradient(300deg, #3c324090, #9f85667d); /* Adjust gradient colors */
     background-size: 300% 300%;
     animation: animateGlow 5s ease-out;
