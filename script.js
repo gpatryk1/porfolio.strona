@@ -47,90 +47,117 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '200px',
     duration: 2000,
-    reset: true     
-})
-
-  sr.reveal('.home-content',{
-    delay: 200,
+    reset: true
+  });
+  
+  // Reveal configurations for different elements
+  sr.reveal('.home-content', {
+    delay: 400,
     origin: 'top',
-    distance: '150px',
-    interval: 200
-  })
-  sr.reveal('.bx bx-menu',{
-    delay: 200,
+    distance: '700px'
+  });
+  sr.reveal('.header', {
+    delay: 400,
     origin: 'top',
-    distance: '200px',
-    interval: 200
-  })
-  sr.reveal('.backlit-box',{
+    distance: '700px'
+  });
+  
+  
+  sr.reveal('.bx-menu', { // Corrected selector
     delay: 200,
     origin: 'right',
-    distance: '300px',
-    interval: 200
-  })
+    distance: '500px'
+  });
+  
+  sr.reveal('.backlit-box', {
+    delay: 600,
+    origin: 'right',
+    distance: '800px'
+  });
+  
+  sr.reveal('.topline', {
+    delay: 600,
+    origin: 'left',
+    distance: '700px'
+  });
+  
+  sr.reveal('.icon-box', {
+    delay: 500,
+    origin: 'left',
+    distance: '600px'
+  });
+  
+  sr.reveal('.img-photo', {
+    delay: 400,
+    origin: 'right',
+    distance: '700px'
+  });
+  
+  sr.reveal('.heading', {
+    delay: 600,
+    origin: 'left',
+    distance: '900px'
+  });
+  
+  sr.reveal('.about-img', {
+    delay: 500,
+    origin: 'right',
+    distance: '900px'
+  });
+  
+  sr.reveal('.about-content', {
+    delay: 400,
+    origin: 'left',
+    distance: '800px'
+  });
+  
+  sr.reveal('.heading5', {
+    delay: 400,
+    origin: 'left',
+    distance: '700px'
+  });
+  
+  sr.reveal('.container1', {
+    delay: 500,
+    origin: 'right',
+    distance: '700px'
+  });
+  
+  sr.reveal('.heading1', {
+    delay: 300,
+    distance: '300px'
+  });
+  
+  sr.reveal('.heading6', {
+    delay: 300,
+    origin: 'left',
+    distance: '200px'
+  });
+  
+  sr.reveal('.input-box', {
+    delay: 600,
+    origin: 'left',
+    distance: '700px'
+  });
+  
+  sr.reveal('.textarea-field', {
+    delay: 500,
+    origin: 'right',
+    distance: '900px'
+  });
+  
+  // Redundant calls
+  sr.reveal('.icon-box', {
+    delay: 500,
+    origin: 'left',
+    distance: '200px'
+  });
+  
+  sr.reveal('.btn', {
+    delay: 500,
+    origin: 'bottom',
+    distance: '200px'
+  });
+
   
 
-
-
-  sr.reveal('.topline',{delay: 400,
-    origin: 'left',   
-    distance: '300px',})
-
-//   sr.reveal('.logo',{delay: 500,
-//     origin: 'left',   
-//     distance: '50px',})
-  sr.reveal('.icon-box',{delay: 500,
-    origin: 'left',   
-    distance: '300px',})
-  
-  sr.reveal('.img-photo',{delay: 400,
-    origin: 'right',   
-    distance: '700px',})
-
-    // sr.reveal('.about',{delay: 300,
-    //     origin: 'left',   
-    //     distance: '50px',
-    //     distance: '500px'})
-
-        sr.reveal('.heading',{delay: 300,
-            origin: 'left',   
-            distance: '300px',
-            interval: 200})
-            
-        sr.reveal('.about-img',{delay: 300,
-            origin: 'right',   
-            distance: '400px',
-            })
-        sr.reveal('.about-content',{delay: 300,
-            origin: 'left',   
-            distance: '300px'})
-        
-            sr.reveal('.heading5',{delay: 300,
-            origin: 'left',   
-            distance: '400px'})
-        
-        
-            sr.reveal('.container1',{delay: 300,
-            origin: 'right',   
-            distance: '700px'})
-        sr.reveal('.heading1',{delay: 300,
-               
-            distance: '300px'})
-        sr.reveal('.heading6',{delay: 300,
-               
-            distance: '200px'})
-        sr.reveal('.input-box',{delay: 300,
-            origin: 'left',   
-            distance: '300px'})
-        sr.reveal('.textarea-field',{delay: 300,
-            origin: 'right',   
-            distance: '500px'})
-        sr.reveal('.btn',{delay: 300,
-            origin: 'bottom',   
-            distance: '200px'})
-        
-
-
-
-  // Ustaw domyślną głośność na 50% (możesz dostosować według potrzeb)
-  document.getElementById("audio").volume = 0.5;
