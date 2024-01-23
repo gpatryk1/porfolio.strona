@@ -1095,7 +1095,7 @@ section:nth-child(odd) .animate.scroll {
 
 @media (max-width: 520px){
     html {
-        font-size: 45%;
+        font-size: 40%;
     }
 
     .home-content h1 {
@@ -1133,7 +1133,7 @@ section:nth-child(odd) .animate.scroll {
 
 
 
-@media (max-width: 371px) {
+@media (max-width: 390px) {
     .home {
         justify-content: center;
     }
