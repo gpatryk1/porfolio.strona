@@ -923,7 +923,7 @@ h2{
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: rgba(0, 0, 0, .1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 
 }
 
