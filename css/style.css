@@ -657,7 +657,7 @@ span {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    transform: scale(2);
+    transform: scale(1.7);
     filter: blur(1.5vw); /* Adjust the blur amount */
     background: linear-gradient(270deg, #9036c7da, #f19e3e, #827e82ef); /* Adjust gradient colors */
     background-size: 200% 200%;
