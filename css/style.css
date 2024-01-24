@@ -167,7 +167,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 8rem 11% 2rem;
+    padding: 10rem 9% 2rem;
 
 }
 
@@ -179,7 +179,7 @@ section {
     justify-content: space-between;
     align-items: center;
     /* height: 90vh; */
-    /* padding: 0 16%; */
+    padding: 0 12%;
 }
 
 .topline {
@@ -200,7 +200,7 @@ color: rgb(255, 255, 255);
 }
 
 .home-content {
-    max-width: 60rem;
+    max-width: 70rem;
 }
 
 .home-content h1 {
@@ -362,7 +362,7 @@ audio {
 
 .icon-box {
     position: absolute;
-    bottom: 3rem;
+    top: 63rem;
     width: 300px;
     display: flex;
     justify-content: space-between;
