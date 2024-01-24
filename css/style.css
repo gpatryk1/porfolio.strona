@@ -487,15 +487,14 @@ audio {
 
 .imgi {
     position: relative;
-
-    max-width: 103%;
+    max-width: 100%;
     height: auto;
-    opacity: 0.70;   
+    opacity: 0.65;
     overflow: hidden;
     /* box-shadow: rgba(245, 4, 4, 10); */
     border-radius: 45%;
-     
-}
+    margin-top: 20px;
+ }
 
 .backlit-box {
     position: relative;
