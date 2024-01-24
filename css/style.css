@@ -167,7 +167,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 9rem 11% 2rem;
+    padding: 8rem 11% 2rem;
 
 }
 
@@ -362,12 +362,12 @@ audio {
 
 .icon-box {
     position: absolute;
-    /* bottom: 4rem; */
-    width: 350px;
+    bottom: 3rem;
+    width: 300px;
     display: flex;
     justify-content: space-between;
     font-size:30px;
-    padding-top: 600px;
+    /* padding-top: 600px; */
 
 }
 
