@@ -107,13 +107,13 @@ const sr = ScrollReveal({
   
   sr.reveal('.about-content', {
     delay: 300,
-    origin: 'left',
+    origin: 'right',
     distance: '800px'
   });
   
   sr.reveal('.heading5', {
     delay: 300,
-    origin: 'left',
+    origin: 'right',
     distance: '700px'
   });
   
