@@ -668,12 +668,12 @@ span {
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    transform: scale(1.5);
+    transform: scale(1.3);
     filter: blur(2vw); /* Adjust the blur amount */
     background: linear-gradient(270deg, #9036c7da, #f19e3e, #827e82ef); /* Adjust gradient colors */
     background-size: 200% 200%;
     animation: animateGlow 5s ease infinite;
-    border-radius: 45%;
+    border-radius: 50%;
 }
 
 .about-img img {
