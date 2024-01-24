@@ -82,9 +82,9 @@ const sr = ScrollReveal({
   });
   
   sr.reveal('.icon-box', {
-    delay: 600,
+    delay: 900,
     origin: 'left',
-    distance: '1200px'
+    distance: '600px'
   });
   
   sr.reveal('.img-photo', {

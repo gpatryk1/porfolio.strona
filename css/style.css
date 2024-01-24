@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 
@@ -61,7 +62,23 @@ body {
     transition: .3s;
 }
 
+/* .header.sticky {
+    background:#1d1e23;
+} */
 
+
+/* 
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d1e23;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+} */
 
 .header::after {
     content: '';
@@ -108,7 +125,26 @@ body {
     transition: color 0.7s ease, text-shadow 0.4s ease;
     
     
+    /* justify-content: space-between; */
+    
 }
+
+/* .navbar a:hover,
+.navbar a.active {
+    color:#f7c290a5
+} */
+
+/* .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cab49fb0;
+    transition: .5s;
+} */
+
 
 
 .navbar a:hover,
@@ -131,7 +167,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 9rem 11% 2rem;
 
 }
 
@@ -185,8 +221,8 @@ audio {
     outline: none; /* Usuń obramowanie na fokusie */
     margin-left: 1rem;
     display: flex;
-      /* align-items: left;
-      margin-left: auto; */
+      align-items: left;
+      margin-left: auto;
   }
 
   audio::-webkit-media-controls-panel {
@@ -203,7 +239,9 @@ audio {
   
 
   audio::-webkit-media-controls-panel {
+    display: flex;
     
+    align-items: center;
     /* Kolor tła obszaru odtwarzacza */
     color: transparent; /* Kolor tekstu w obszarze odtwarzacza */
     padding: 5px; /* Dodaj odstępy wokół przycisków */
@@ -214,7 +252,9 @@ audio {
 
  /* Ukryj większość kontrolek, pozostawiając tylko przyciski play i głośność */
  audio::-webkit-media-controls-panel {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #26211c99; /* Kolor tła obszaru odtwarzacza */
     color: white; /* Kolor tekstu w obszarze odtwarzacza */
     padding: 5px; /* Dodaj odstępy wokół przycisków */
@@ -322,11 +362,13 @@ audio {
 
 .icon-box {
     position: absolute;
-    bottom: 4rem;
+    /* bottom: 4rem; */
     width: 350px;
     display: flex;
     justify-content: space-between;
-    font-size: 30px;
+    font-size:30px;
+    padding-top: 650px;
+
 }
 
 .icon-box a {
@@ -337,6 +379,8 @@ audio {
     width: 70px;
     height: 40px;
     background: transparent;
+    
+    
 }
 
 .icon-box a {
