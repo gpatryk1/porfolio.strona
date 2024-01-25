@@ -179,8 +179,7 @@ section {
     justify-content: space-between;
     align-items: center;
     /* height: 90vh; */
-    padding: 0 9%;
-}
+    padding: 0 12%; }
 
 .topline {
 display: block; 
@@ -362,7 +361,7 @@ audio {
 
 .icon-box {
     position: absolute;
-    top: 92rem;
+    bottom: 4rem;
     width: 350px;
     display: flex;
     justify-content: space-between;
@@ -1128,11 +1127,16 @@ section:nth-child(odd) .animate.scroll {
     
 }
 
+@media (max-width: 430px) {
 
-
-@media (max-width: 390px) {
+    html {
+        font-size: 35%;
+        
+    }
     .home {
         justify-content: center;
+        
+        
     }
 
     .home-content {
@@ -1140,6 +1144,47 @@ section:nth-child(odd) .animate.scroll {
         align-items: center;
         flex-direction: column;
         text-align: center;
+        padding: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+}
+
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+
+    html {
+        font-size: 35%;
+        
+    }
+    .home {
+        justify-content: center;
+        
+        
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
     }
 
     .home-content h1 {
