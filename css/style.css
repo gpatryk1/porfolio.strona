@@ -835,23 +835,21 @@ span {
     margin-top: 50px;
     margin-left: 90px;
     font-size: 2rem;
+    background: rgba(93, 53, 53, 0); /* Tło z niewielką przezroczystością (fallback dla starszych przeglądarek) */
+    padding: 20px; /* Dodaj padding dla lepszego wyglądu */
+    border-radius: 10px; /* Zaokrąglij rogi */
+    backdrop-filter: blur(20px); /* Ustawienie efektu szkła */
+    box-shadow: 20px 20px 25px rgba(23, 22, 22, 0.982);
   }
   
   /* Dodatkowe style dla czytelności */
   .point .info {
     display: none; /* Ukryj dodatkowe informacje o ikonie */
   }
-
-  /* .icons-container .point {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   
   .descriptions-container .description {
     display: none; /* Ukryj wszystkie opisy na początku */
   }
-  
   
   /* Dodaj animację dla efektu fade-in */
   .description {
@@ -866,6 +864,7 @@ span {
       opacity: 1;
     }
   }
+  
   
   
   
