@@ -158,7 +158,66 @@ const sr = ScrollReveal({
     origin: 'bottom',
     distance: '200px'
   });
+  sr.reveal('.icons-container', {
+    delay: 500,
+    origin: 'left',
+    distance: '500px'
+  });
+  sr.reveal('.descriptions-container', {
+    delay: 400,
+    origin: 'bottom',
+    distance: '400px'
+  });
 
   
 
  
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Sprawdź, czy jest zapisana ostatnio wybrana ikona w lokalnym magazynie
+    var lastSelectedYear = localStorage.getItem("lastSelectedYear");
+    if (lastSelectedYear) {
+      showDescription(parseInt(lastSelectedYear));
+    }
+  });
+
+  function showDescription(year) {
+    // Ukryj wszystkie opisy
+    var descriptions = document.querySelectorAll('.description');
+    descriptions.forEach(function (desc) {
+      desc.style.display = 'none';
+    });
+
+    // Pokaż wybrany opis
+    var selectedDesc = document.getElementById('desc' + year);
+    selectedDesc.style.display = 'block';
+
+    // Zapisz ostatnio wybraną ikonę w lokalnym magazynie
+    localStorage.setItem("lastSelectedYear", year.toString());
+  }
+
+
+  document.querySelectorAll('.icon').forEach(function(icon) {
+    icon.addEventListener('click', function() {
+        // Usuń klasę active z poprzednio zaznaczonej ikony
+        document.querySelector('.icon.active')?.classList.remove('active');
+
+        // Dodaj klasę active do aktualnie zaznaczonej ikony
+        this.classList.add('active');
+    });
+});
+
+
+
+const sekcjaUmiejetnosci = document.getElementById('mojeUmiejetnosci');
+
+if (!mojeUmiejetnosci.hasChildNodes()) {
+  const pustyTekst = document.createElement('p');
+  pustyTekst.textContent = "No cóż, ta sekcja jest trochę jak moje umiejętności JavaScript – na razie pusto, ale obiecuję, że niedługo się tu pojawią jakieś magiczne zdolności! 🚀";
+  mojeUmiejetnosci.appendChild(pustyTekst);
+}
+
+
+
+
+

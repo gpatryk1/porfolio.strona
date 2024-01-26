@@ -774,6 +774,231 @@ span {
     animation: animateGlow 5s ease-out;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    flex-direction: column;
+    position: relative; /* Dodaj position: relative, aby pseudo-element :after był względem tego elementu */
+}
+
+.wrapper:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(9vw);
+    background: linear-gradient(270deg, #e7a1e7da, #6e38818c, #7f3de1ef);
+    background-size: 300% 300%;
+    animation: animateGlow 8s ease infinite;
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+  
+  
+  .point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; 
+    
+  }
+  
+  
+  
+  
+  
+  .descriptions-container {
+    width: 50%; /* Adjust the width as needed */
+    margin-top: 30px;
+    margin-left: 90px;
+    font-size: 2rem;
+  }
+  
+  /* Dodatkowe style dla czytelności */
+  .point .info {
+    display: none; /* Ukryj dodatkowe informacje o ikonie */
+  }
+
+  /* .icons-container .point {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .descriptions-container .description {
+    display: none; /* Ukryj wszystkie opisy na początku */
+  }
+  
+  
+  /* Dodaj animację dla efektu fade-in */
+  .description {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+.point {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 70px;
+    cursor: pointer;
+    
+  }
+
+  :root {
+    --keyword-color: #08a38f;  /* Kolor dla słów kluczowych (np. if, else, var) */
+    --string-color: #faefff;   /* Kolor dla ciągów znaków */
+    --number-color: #f30808;   /* Kolor dla liczb */
+    --comment-color: #e1e1e1;     /* Kolor dla komentarzy */
+}
+.imgpostman {
+    background-color: white;
+    border-radius: 60%;
+    padding: 1px;
+}
+  
+  code {
+    color: #ffffff;  /* Kolor tekstu domyślnego */
+    font-family: 'Courier New', monospace;  /* Styl czcionki monoszerokiej */
+    display: block;  /* Make the <code> element a block to contain other elements */
+    margin: 10px 0;  /* Add some margin for spacing */
+    padding: 10px;  /* Add padding for better readability */
+    
+    border-radius: 5px;  /* Add rounded corners */
+}
+
+/* Stylowanie poszczególnych składników kodu */
+code .keyword {
+    color: var(--keyword-color);
+}
+
+code .string {
+    color: var(--string-color);
+}
+
+code .number {
+    color: var(--number-color);
+}
+
+code .comment {
+    color: var(--comment-color);
+    font-style: italic;
+}
+
+  
+  .icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin-bottom: 35px;
+    transition: color 0.8s ease-in-out;
+}
+
+.icon:hover {
+    
+    animation: rotateIcon 1s ease-in-out forwards;
+}
+
+
+
+.icon.active {
+    animation: pulseIcon 0.9s infinite;
+}
+
+
+@keyframes pulseIcon {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+  
+  .info {
+    text-align: center;
+  }
+  
+  
+  .container1 * {
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .skills:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  
+  .details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .bar {
+    position: relative;
+    background-color: rgba(245, 164, 89, 0.06);
+    border: 1px solid rgba(245, 179, 104, 0.06);
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(252, 173, 3, 0.8); /* Dodaj efekt neonowego koloru */
+  }
+  
+  .bar div {
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #fcaa67;
+    border: 1px solid #f17d11;
+    box-shadow: 0 0 5px rgba(222, 231, 237, 2);
+  }
+
 .container1 *{
     font-family: "Poppins",sans-serif;
     color: #ffffff;
@@ -809,6 +1034,8 @@ h2{
     border: 1px solid #f17d11;
     box-shadow: 0 0 5px rgba(222, 231, 237, 2);
 }
+
+
 #st-bar{
     animation: st-fill 2s forwards;
 }
@@ -1151,6 +1378,28 @@ section:nth-child(odd) .animate.scroll {
         font-size: 4rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: center; /* Center items vertically */
+    }
+  
+    .icons-container {
+      justify-content: center;
+    }
+  
+    .descriptions-container {
+      width: 100%; /* Full width for descriptions on small screens */
+      margin-top: 20px; /* Adjust spacing as needed */
+      margin-left: 0; /* Center descriptions on small screens */
+      font-size: 1.5rem;
+    }
+  
+    .point.special1 {
+      margin-top: 20px !important; /* Adjust spacing for special points on small screens */
+    }
+  }
 
 @keyframes aboutSpinner {
     100% {

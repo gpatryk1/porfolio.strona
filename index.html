@@ -22,6 +22,7 @@
       crossorigin="anonymous"
     ></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-lKuwVRxLl5kNvLPU+5c/iKnuA80GWP7ZOOFKcR5W9v5/6EJ4JC5rnYF+5XUKn89e" crossorigin="anonymous">
 
   </head>
 <body>
@@ -121,69 +122,134 @@
     <section class="heading2" id="skills">
       <h3 class="heading5">My <span>Skills</span></h3>
       <div class="wrapper">
-        <!-- <div class="shape-1"></div>
-        <div class="shape-2"></div> -->
-        <div class="container1">
-            <div class="skills">
-                <div class="details">
-                    <span>Software Testing</span>
-                    <span>50%</span>
-                </div>
-                <div class="bar">
-                    <div id="st-bar"></div>
-                </div>
+    
+        <div class="icons-container">
+          <div class="point" data-year="2020" onclick="showDescription(2020)">
+            <div class="icon">
+              <img src="/images/icons8-bug-96.png" alt="">
             </div>
-            <div class="skills">
-                <div class="details">
-                    <span>MySQL</span>
-                    <span>45%</span>
-                </div>
-                <div class="bar">
-                    <div id="sql-bar"></div>
-                </div>
+            <div class="info">
+              
             </div>
-            <div class="skills">
-                <div class="details">
-                    <span>Postman</span>
-                    <span>40%</span>
-                </div>
-                <div class="bar">
-                    <div id="post-bar"></div>
-                </div>
+          </div>
+    
+          <div class="point" data-year="2021" onclick="showDescription(2021)">
+            <div class="icon">
+              <img width="85" height="85" src="https://img.icons8.com/arcade/85/sql.png" alt="sql"/>
             </div>
-            <div class="skills">
-                <div class="details">
-                    <span>HTML</span>
-                    <span>30%</span>
-                </div>
-                <div class="bar">
-                    <div id="html-bar"></div>
-                </div>
+            <div class="info">
+              
             </div>
-            <div class="skills">
-                <div class="details">
-                    <span>CSS</span>
-                    <span>30%</span>
-                </div>
-                <div class="bar">
-                    <div id="css-bar"></div>
-                </div>
-            </div>
-            <div class="skills">
-                <div class="details">
-                    <span>GIT</span>
-                    <span>35%</span>
-                </div>
-                <div class="bar">
-                    <div id="git-bar"></div>
-                </div>
+          </div>
+    
+          <div class="point" data-year="2022" onclick="showDescription(2022)">
+            <div class="icon">
+              <img class="imgpostman" width="85" height="85" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/85/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" alt="external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo"/>
             </div>
             
-        </div>
-        
-    </div>
+          </div>
     
+          <div class="point" data-year="2023" onclick="showDescription(2023)">
+            <div class="icon">
+              <img width="85" height="85" src="https://img.icons8.com/color/85/html-5--v1.png" alt="html-5--v1"/>
+            </div>
+            <div class="info">
+             
+            </div>
+          </div>
+          <div class="point" data-year="2024" onclick="showDescription(2024)">
+            <div class="icon">
+              <img width="85" height="85" src="https://img.icons8.com/fluency/85/css3.png" alt="css3"/>
+            </div>
+            <div class="info">
+              
+            </div>
+          </div>
+          <div class="point" data-year="2025" onclick="showDescription(2025)">
+            <div class="icon">
+              <img width="85" height="85" src="https://img.icons8.com/color/85/git.png" alt="git"/>
+            </div>
+            <div class="info">
+              
+            </div>
+          </div>
+          <div class="point special1" data-year="2026" onclick="showDescription(2026)">
+            <div class="icon">
+              <img width="85" height="85" src="https://img.icons8.com/color/85/javascript--v1.png" alt="javascript--v1"/>
+            </div>
+            <div class="info">
+              
+            </div>
+          </div>
+          <div class="point special1" data-year="2027" onclick="showDescription(2027)">
+            <div class="icon">
+              <img width="85" height="85" src="https://img.icons8.com/dusk/85/000000/settings-3.png" alt="settings-3"/>
+            </div>
+            <div class="info">
+              
+            </div>
+          </div>
+        </div>
+    
+        <div class="descriptions-container">
+          <div class="description" id="desc2020">
+            <h2>Manual Software Testing</h2>
+            <p>🔍 Odkrywanie Błędów: Zabieram się za testowanie z determinacją detektywa. Szukam bugów, zanim zdążą zrobić zamieszanie. <br>
 
+              🗣️ Moje raporty są - klarowne, zrozumiałe i pełne potrzebnych informacji tak samo jak pisanie przypadków testowych i scenariuszy.
+                 <br>
+               🚀  Chociaż jestem Juniorem, jestem gotowy do rozwijania się i podążenia za przyszłymi wyzwaniami w świecie testowania. Dokończe jutro...
+
+
+              
+              
+              </p>
+          </div>
+          <div class="description" id="desc2021">
+            <h2>SQL</h2>
+            <p>Jako początkujący w obszarze baz danych, potrafię pobierać, sortować, aktualizować i usuwać dane. Posiadam umiejętność filtrowania danych przy użyciu WHERE, AND i OR, a także elastyczne wyszukiwanie za pomocą LIKE, % w zapytaniach SQL. Znane mi są również funkcje agregujące. Staram się cały czas poszerzać swoją wiedzę w tym temacie .:) <p>
+          </div>
+          <div class="description" id="desc2022">
+            <h2>Postman</h2>
+            <p>W trackie pisania. Wczoraj już było późno...</p>
+          </div>
+          <div class="description" id="desc2023">
+            <h2>HTML</h2>
+            <p>Uczę się już od jakiegoś czasu, głównie na własną rękę, aktualnie przerabiam dość obszerny kurs. Ogarniam już mniej więcej, jak działa struktura strony, i aktualnie moja własna strona to rezultat ostatnich tygodni nauki. Nie jest może perfekcyjna, ale myślę, że daję radę, biorąc pod uwagę, że dopiero raczkuję w tym od niedawna😉. Myśle, że poznanie struktury HTML pomoże mi również w ewentualnych testach.</p>
+          </div>
+          <div class="description" id="desc2024">
+            <h2>CSS</h2>
+            <p>
+              
+              Tak samo jak z HTML, tak w tym wypadku dopiero zgłębiam tajniki CSS. Moja strona to swego rodzaju "dowód postępu" w nauce. Mam nadzieję, że mimo, że to początek, widać już, że coś się tu dzieje. 😅✨ </p>
+          </div>
+          <div class="description" id="desc2025">
+            <h2>GIT</h2>
+            <p>Znam podstawy Git, takie jak inicjowanie repozytorium, dodawanie i zatwierdzanie zmian, zarządzanie gałęziami, rozwiązywanie konfliktów oraz współpraca z repozytoriami zdalnymi. Mimo podstawowego doświadczenia, jestem gotów do dalszego rozwoju.</p>
+          </div>
+          <div class="description" id="desc2026">
+            <h2>JavaScript</h2>
+          
+        
+            <p>
+              <code class="kodjs">
+                  <span class="keyword">const</span> <span class="variable">sekcjaUmiejetnosci</span> = <span class="keyword">document</span>.<span class="keyword">createElement</span>('div');<br><br>
+                  
+                  <span class="keyword">const</span> <span class="variable">kodTekst</span> = <span class="keyword">document</span>.<span class="keyword">createElement</span>('code');
+                  <span class="variable">kodTekst</span>.<span class="keyword">textContent</span> = "<span class="string"><b>No cóż, ta sekcja jest trochę jak moje umiejętności JavaScript – na razie pusto, ale obiecuję, że niedługo się tu pojawią jakieś magiczne zdolności! 🚀</b></span>";<br><br>
+                  <span class="variable">sekcjaUmiejetnosci</span>.<span class="keyword">appendChild</span>(<span class="variable">kodTekst</span>);
+      
+                  <span class="keyword">document</span>.<span class="keyword">body</span>.<span class="keyword">appendChild</span>(<span class="variable">sekcjaUmiejetnosci</span>);
+              </code>
+          </p>
+          </div>
+          <div class="description" id="desc2027">
+            <h2>Automation Testing</h2><br>
+            <p>🤖 #TestyAutomatyczne404Error</p>
+            <p>not found</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="portfolio" id="portfolio">
