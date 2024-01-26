@@ -197,25 +197,24 @@ const sr = ScrollReveal({
   }
 
 
-  document.querySelectorAll('.icon').forEach(function(icon) {
-    icon.addEventListener('click', function() {
-        // Usuń klasę active z poprzednio zaznaczonej ikony
-        document.querySelector('.icon.active')?.classList.remove('active');
+  document.addEventListener('DOMContentLoaded', function() {
+    // Dodaj klasę active do pierwszej ikony po załadowaniu strony
+    document.querySelector('.icon').classList.add('active');
 
-        // Dodaj klasę active do aktualnie zaznaczonej ikony
-        this.classList.add('active');
+    document.querySelectorAll('.icon').forEach(function(icon) {
+        icon.addEventListener('click', function() {
+            // Usuń klasę active z poprzednio zaznaczonej ikony
+            document.querySelector('.icon.active')?.classList.remove('active');
+
+            // Dodaj klasę active do aktualnie zaznaczonej ikony
+            this.classList.add('active');
+        });
     });
 });
 
 
 
-const sekcjaUmiejetnosci = document.getElementById('mojeUmiejetnosci');
 
-if (!mojeUmiejetnosci.hasChildNodes()) {
-  const pustyTekst = document.createElement('p');
-  pustyTekst.textContent = "No cóż, ta sekcja jest trochę jak moje umiejętności JavaScript – na razie pusto, ale obiecuję, że niedługo się tu pojawią jakieś magiczne zdolności! 🚀";
-  mojeUmiejetnosci.appendChild(pustyTekst);
-}
 
 
 
