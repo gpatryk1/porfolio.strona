@@ -165,8 +165,8 @@ const sr = ScrollReveal({
   });
   sr.reveal('.descriptions-container', {
     delay: 400,
-    origin: 'bottom',
-    distance: '400px'
+    origin: 'rightm',
+    distance: '900px'
   });
 
   
