@@ -172,50 +172,45 @@ const sr = ScrollReveal({
   
 
  
-
-  document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.icon').forEach(function (icon) {
+      icon.addEventListener('click', function () {
+        // Usuń klasę active z poprzednio zaznaczonej ikony
+        document.querySelector('.icon.active')?.classList.remove('active');
+  
+        // Dodaj klasę active do aktualnie zaznaczonej ikony
+        this.classList.add('active');
+  
+        // Pobierz rok z identyfikatora ikony
+        var year = this.id.replace('icon', '');
+  
+        // Wywołaj funkcję showDescription z aktualnym rokiem
+        showDescription(year);
+      });
+    });
+  
+    // Pokaż domyślnie opis dla "Manual Software Testing"
+    showDescription(2020);
+  
     // Sprawdź, czy jest zapisana ostatnio wybrana ikona w lokalnym magazynie
-    var lastSelectedYear = localStorage.getItem("lastSelectedYear");
+    var lastSelectedYear = localStorage.getItem('lastSelectedYear');
     if (lastSelectedYear) {
-      showDescription(parseInt(lastSelectedYear));
+      // Trigger click event on the last selected icon
+      document.getElementById('icon' + lastSelectedYear)?.click();
     }
   });
-
+  
   function showDescription(year) {
     // Ukryj wszystkie opisy
     var descriptions = document.querySelectorAll('.description');
     descriptions.forEach(function (desc) {
       desc.style.display = 'none';
     });
-
+  
     // Pokaż wybrany opis
     var selectedDesc = document.getElementById('desc' + year);
     selectedDesc.style.display = 'block';
-
+  
     // Zapisz ostatnio wybraną ikonę w lokalnym magazynie
-    localStorage.setItem("lastSelectedYear", year.toString());
+    localStorage.setItem('lastSelectedYear', year.toString());
   }
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-    // Dodaj klasę active do pierwszej ikony po załadowaniu strony
-    document.querySelector('.icon').classList.add('active');
-
-    document.querySelectorAll('.icon').forEach(function(icon) {
-        icon.addEventListener('click', function() {
-            // Usuń klasę active z poprzednio zaznaczonej ikony
-            document.querySelector('.icon.active')?.classList.remove('active');
-
-            // Dodaj klasę active do aktualnie zaznaczonej ikony
-            this.classList.add('active');
-        });
-    });
-});
-
-
-
-
-
-
-
-
