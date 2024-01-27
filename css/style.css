@@ -889,7 +889,10 @@ span {
     border-radius: 60%;
     padding: 1px;
 }
-  
+.cypress {
+    max-width: 100%;
+ 
+}
   code {
     color: #ffffff;  /* Kolor tekstu domyślnego */
     font-family: 'Courier New', monospace;  /* Styl czcionki monoszerokiej */

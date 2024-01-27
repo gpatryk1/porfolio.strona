@@ -215,8 +215,21 @@ const sr = ScrollReveal({
 
 
 
+describe('Test Umiejętności w Testowaniu Automatycznym', () => {
+  it('Powinienem być szczery co do moich umiejętności', () => {
+    // Otwórz stronę, na której testuję swoje braki umiejętności
+    cy.visit('www.testy-moich-umiejetnosci.com');
 
+    // Przejdź do sekcji "Testy Automatyczne" (o ile potrafię nawigować)
+    cy.get('#navigation').contains('Testy Automatyczne').click();
 
+  // Przeskanuj stronę pod kątem śladów umiejętności
+    cy.get('.evidence-of-skills').should('not.exist');
+
+    // Zakończ test z nadzieją na przyszłe ulepszenia (jeśli je znajdę)
+    cy.get('#hopefulEmoji').should('have.attr', 'alt', 'Emotikon pełen nadziei');
+  });
+});
 
 
 
