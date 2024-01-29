@@ -62,23 +62,7 @@ body {
     transition: .3s;
 }
 
-/* .header.sticky {
-    background:#1d1e23;
-} */
 
-
-/* 
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #1d1e23;
-    backdrop-filter: blur(10px);
-    z-index: -1;
-} */
 
 .header::after {
     content: '';
@@ -125,26 +109,7 @@ body {
     transition: color 0.7s ease, text-shadow 0.4s ease;
     
     
-    /* justify-content: space-between; */
-    
 }
-
-/* .navbar a:hover,
-.navbar a.active {
-    color:#f7c290a5
-} */
-
-/* .navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #cab49fb0;
-    transition: .5s;
-} */
-
 
 
 .navbar a:hover,
@@ -704,20 +669,7 @@ span {
     animation: pulse 6s infinite; /* Adjust the duration as needed */
 }
 
-/* .about-img .circle-spin {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border-top: .3rem solid #fab066c5;
-    border-bottom: .3rem solid #fab066c5;
-    border-left: .2rem solid #474b4c0a;
-    border-right: .2rem solid #474b4c0a;
-    animation: aboutSpinner 8s linear infinite;
-} */
+
 
 .about-content {
     text-align: center;
@@ -1145,45 +1097,7 @@ h2{
     font-size:  1.5rem;
 }
 
-/* .animate {
-    position: absolutba
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #1d1e23;
-    z-index: 98;
-}
 
-.logo .animate,
-.navbar .animate,
-#menu-icon .animate,
-.home.show-animate .animate {
-    animation: showRight 1s ease forwards;
-    animation-delay: calc(.3s * var(--i));
-}
-
-.animate.scroll {
-    transition: 1s ease;
-    transition-delay: calc(.3s / var(--i));
-    animation: none;
-}
-
-section:nth-child(odd) .animate.scroll {
-    background: #3f4243;
-}
-
-.heading2 .animate.scroll {
-    width: 100%;
-}
-
-.about.show-animate .animate.scroll,
-.heading2.show-animate .animate.scroll,
-.portfolio.show-animate .animate.scroll,
-.contact.show-animate .animate.scroll,
-.heading5.show-animate .animate.scroll {
-    transition-delay: calc(.3s * var(--i));
-    width: 0; /* Set the initial width */
 
 
 /* BREAKPOINTS */
