@@ -456,15 +456,17 @@ audio {
 
 .imgi {
     position: relative;
-    max-width: 115%;
-    /* height: auto; */
+    /* max-width: 115%; Maksymalna szerokość obrazka wynosi 115% */
+    width: 109%; /* Obrazek będzie zajmował 100% dostępnej szerokości */
+    height: auto;
     opacity: 0.70;
     overflow: hidden;
-    /* box-shadow: rgba(245, 4, 4, 10); */
     border-radius: 35%;
-    margin-top: -65px;
+    margin-top: -25px;
+    box-sizing: border-box; /* Dodajemy to, aby padding nie zwiększał szerokości obrazka */
     
- }
+}
+
  .imgi {
     transition: opacity 0.3s ease-in-out;
 }
@@ -1151,12 +1153,21 @@ h2{
     }
 }
 
-@media (min-width: 1413px) {
+@media only screen and (max-width: 768px) {
     .imgi {
-        max-width: 50vw; /* Dostosuj szerokość dla jeszcze większych ekranów */
-        margin-top: -15px;
+        max-width: 100%;
     }
 }
+
+
+@media (min-width: 1416px) {
+    .imgi {
+      max-width: 50%; /* Set the maximum width for larger screens */
+      height: auto;
+      position: relative;
+      margin-bottom: 100px;
+    }
+  }
 
     .navbar {
         position: absolute;
@@ -1271,6 +1282,12 @@ h2{
 
     .home-content h1 {
         font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .imgi {
+        max-width: 20%; /* Dla mniejszych ekranów, ustaw maksymalną szerokość na 100% */
     }
 }
 
