@@ -456,14 +456,23 @@ audio {
 
 .imgi {
     position: relative;
-    max-width: 105%;
-    height: auto;
+    max-width: 115%;
+    /* height: auto; */
     opacity: 0.70;
     overflow: hidden;
     /* box-shadow: rgba(245, 4, 4, 10); */
-    border-radius: 45%;
-    margin-top: -20px;
+    border-radius: 35%;
+    margin-top: -65px;
+    
  }
+ .imgi {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.imgi:hover {
+    opacity: 1;
+}
+
 
 .backlit-box {
     position: relative;
@@ -497,13 +506,7 @@ audio {
     animation: animateGlow 8s ease infinite;
   }
 
-  .imgi {
-    transition: opacity 0.3s ease-in-out;
-}
 
-.imgi:hover {
-    opacity: 1;
-}
 
  
   
@@ -1139,6 +1142,21 @@ h2{
     #menu-icon {
         display: block;
     }
+
+
+    @media (min-width: 768px) {
+    .imgi {
+        max-width: 70vw; /* Ustaw odpowiednią szerokość dla większych ekranów */
+        margin-top: -10px;
+    }
+}
+
+@media (min-width: 1413px) {
+    .imgi {
+        max-width: 50vw; /* Dostosuj szerokość dla jeszcze większych ekranów */
+        margin-top: -15px;
+    }
+}
 
     .navbar {
         position: absolute;

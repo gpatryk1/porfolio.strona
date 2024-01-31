@@ -228,3 +228,5 @@ const sr = ScrollReveal({
     // Możesz dodać dodatkową logikę, np. odtworzenie audio po otwarciu strony:
     audio.play();
   });
+
+  
