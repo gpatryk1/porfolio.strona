@@ -106,7 +106,7 @@ body {
     text-decoration: none;
     margin-left: 4rem;
     letter-spacing: 0.5px;
-    transition: color 0.7s ease, text-shadow 0.4s ease;
+    transition: color 0.7s ease, text-shadow 0.6s ease;
     
     
 }
@@ -114,8 +114,8 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #f9f9f8a1;
-    text-shadow: 0 0 10px #fdfcfba1, 0 0 20px #fefbf7a1, 0 0 30px #f4f4f3a1;
+    color: #fafafacc;
+    text-shadow: 0 0 15px #fdfcfba1, 0 0 25px #fefbf7a1, 0 0 35px #f4f4f3a1;
     
 }
 
@@ -330,9 +330,7 @@ audio {
     width: 350px;
     display: flex;
     justify-content: space-between;
-    font-size:30px;
-    /* padding-top: 600px; */
-
+    font-size: 30px;
 }
 
 .icon-box a {
@@ -343,18 +341,13 @@ audio {
     width: 70px;
     height: 40px;
     background: transparent;
-    
-    
-}
-
-.icon-box a {
     color: #b7ab9f96;
+    transition: color 0.6s ease-in-out; /* Dodane płynne przejście koloru */
 }
 
 .icon-box a:hover {
     color: #fffefdcb;
 }
-
 
     
 
@@ -447,7 +440,19 @@ audio {
 }
 
 
+.github {
+    text-shadow: 0 0 5px #faf7f3, 0 0 10px #ffffff, 0 0 10px #ffffff;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: all 0.6s ease-in-out; /* Dodane płynne przejście */
+    cursor: pointer; /* Dodane efekt kursora */
+    font-weight: 600;
+}
 
+.github:hover {
+    text-shadow: 0 0 5px #f5a032, 0 0 10px #f59e24, 0 0 15px #ed7834;
+    color: #ebad6acc; /* Zmiana koloru przy najechaniu na link */
+}
 
 .imgi {
     position: relative;

@@ -168,6 +168,11 @@ const sr = ScrollReveal({
     origin: 'rightm',
     distance: '900px'
   });
+  sr.reveal('.port', {
+    delay: 700,
+    origin: 'rightm',
+    distance: '900px'
+  });
 
   
 
@@ -214,3 +219,12 @@ const sr = ScrollReveal({
     // Zapisz ostatnio wybraną ikonę w lokalnym magazynie
     localStorage.setItem('lastSelectedYear', year.toString());
   }
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById("audio");
+    audio.volume = 0.2; // Ustaw głośność na 50%
+  
+    // Możesz dodać dodatkową logikę, np. odtworzenie audio po otwarciu strony:
+    audio.play();
+  });
