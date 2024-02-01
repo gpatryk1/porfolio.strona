@@ -267,6 +267,7 @@ audio {
     min-width: 500px;
     margin-top: 0px;
     white-space: nowrap;
+    
 } 
  .text-animate {
     padding-top: 0; } 
@@ -282,6 +283,7 @@ audio {
     content: "#";
     color: #bba58ecb;
     animation: words 15s infinite;
+    
 }
 
 .text-animate span::after{
@@ -292,7 +294,8 @@ audio {
     background-color: #1d1e23;
     border-left: 2px solid #e4d7d3;
     right: -8px;
-    animation: cursor .5s infinite, typing 25s steps(40) infinite;
+    animation: cursor .5s infinite, typing 25s steps(60) infinite;
+    text-shadow: 0 0 15px #fdfcfba1, 0 0 25px #fefbf7a1, 0 0 35px #f4f4f3a1;
     
 }
 
