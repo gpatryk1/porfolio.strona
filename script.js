@@ -223,43 +223,10 @@ const sr = ScrollReveal({
 
   document.addEventListener("DOMContentLoaded", function() {
     var audio = document.getElementById("audio");
+    audio.volume = 0.2; // Ustaw głośność na 50%
+  
+    // Możesz dodać dodatkową logikę, np. odtworzenie audio po otwarciu strony:
+    audio.play();
+  });
 
-    // Dodaj obsługę kliknięcia, aby uruchomić odtwarzanie
-    document.addEventListener("click", function() {
-        if (audio.paused) {
-            // Włącz dźwięk po kliknięciu, tylko jeśli jest wyciszony
-            audio.muted = false;
-            audio.volume = 0.2; // Ustaw głośność na 20%
-            
-            audio.play().then(() => {
-                // Obsługa sukcesu
-                console.log("Dźwięk odtworzony po interakcji użytkownika.");
-            }).catch(error => {
-                // Obsługa błędu
-                console.error("Błąd odtwarzania dźwięku:", error);
-            });
-        }
-    });
-
-    // Dodaj nasłuchiwanie zdarzenia, aby włączyć dźwięk po pierwszym interakcji użytkownika
-    document.addEventListener("click", function enableAudio() {
-        audio.muted = false;
-        audio.volume = 0.2; // Ustaw głośność na 20%
-        
-        // Usuń nasłuchiwanie zdarzenia po pierwszym kliknięciu
-        document.removeEventListener("click", enableAudio);
-    });
-
-    // Sprawdź, czy AudioContext jest dostępny
-    if (typeof window.AudioContext !== 'undefined' || typeof window.webkitAudioContext !== 'undefined') {
-        var context = new (window.AudioContext || window.webkitAudioContext)();
-        // Obsługa utworzenia AudioContext w interakcji użytkownika
-        document.addEventListener("click", function() {
-            if (context.state === 'suspended') {
-                context.resume().then(() => {
-                    console.log('AudioContext resumed successfully');
-                });
-            }
-        });
-    }
-});
+  
