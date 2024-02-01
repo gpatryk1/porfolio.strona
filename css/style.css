@@ -85,9 +85,9 @@ body {
 .logo {
     position: relative;
     font-size: 3rem;
-    color:  #faf8f6a1; /* Neon pink color, you can adjust this to your preference */
+    color:  #fffefecf; /* Neon pink color, you can adjust this to your preference */
     font-weight: 700;
-    text-shadow: 0 0 15px  #faf7f3a1, 0 0 25px  #ffffffa1, 0 0 35px  #ffffffa1; /* Adding a constant glowing effect */
+    text-shadow: 0 0 15px  #ffffff, 0 0 25px  #fffcfc, 0 0 35px  #ffffff; /* Adding a constant glowing effect */
 }
 
 
