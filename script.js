@@ -221,6 +221,12 @@ const sr = ScrollReveal({
   }
 
 
+  document.addEventListener("DOMContentLoaded", function() {
+    var audio = document.getElementById("audio");
+    audio.volume = 0.2; // Ustaw głośność na 50%
   
+    // Możesz dodać dodatkową logikę, np. odtworzenie audio po otwarciu strony:
+    audio.play();
+  });
 
   
